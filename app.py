@@ -17,19 +17,19 @@ def before_request():
 
 # routes
 @app.route("/", methods=["GET"])
-def index():
+def home():
     return render_template("home.html")
 
 @app.route("/about", methods=["GET"])
-def index():
+def about():
     return render_template("about.html")
 
 @app.route("/contact", methods=["GET"])
-def index():
+def contact():
     return render_template("contact.html")
 
 
-@app.route("/products", methods=["GET"])
+@app.products("/products", methods=["GET"])
 def index():
     return render_template("products.html")
 
