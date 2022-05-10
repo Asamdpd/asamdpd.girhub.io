@@ -7,6 +7,7 @@ const abouth1 = document.getElementById("abouth1");
 //Nav elements
 const lngIcon = document.getElementsByClassName("lngIcon")[0];
 const langIcon = document.createElement('img');
+const navHome= document.getElementById("navHome"); 
 const navAboutus= document.getElementById("navAbout"); 
 const navProduct= document.getElementById("navProducts");
 const navContact= document.getElementById("navContact");
@@ -17,12 +18,13 @@ let me = document.cookie.split().map(cookie => cookie.split('='))
     {});
 
     
-langIcon.src = `icon/ENG.png`;
+langIcon.src = `/static/icon/ENG.png`;
 lngIcon.appendChild(langIcon)
 
 check();
 
 if(document.cookie.includes('language=bg')){
+    document.getElementById("navHome").innerHTML = "Начало"; 
     document.getElementById("navAbout").innerHTML = "За Нас";
     document.getElementById("navProducts").innerHTML = "Артикули";
     document.getElementById("navContact").innerHTML = "Свържете се с нас";
@@ -31,13 +33,14 @@ if(document.cookie.includes('language=bg')){
 document.getElementById("bg").addEventListener("click", function(){
         langIcon.remove();
         langIcon.src = 
-        `icon/BG.png`;
+        `/static/icon/BG.png`;
         lngIcon.appendChild(langIcon)
 
         document.cookie = 'language=bg';
         abouth1.innerHTML = translate.bg.aboutus.title;
         us.innerHTML = translate.bg.aboutus.about;
 
+        navAboutus.innerHTML = "Начало";
         navAboutus.innerHTML = "За Нас";
         navProduct.innerHTML = "Артикули";
         navContact.innerHTML = "Свържете се с нас"
@@ -47,7 +50,7 @@ document.getElementById("bg").addEventListener("click", function(){
 document.getElementById("eng").addEventListener("click", function(){
         langIcon.remove();
         langIcon.src = 
-        `icon/ENG.png`;
+        `/static/icon/ENG.png`;
         lngIcon.appendChild(langIcon)
         document.cookie="language=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
         location.reload();
@@ -62,7 +65,7 @@ function check(){
         us.innerHTML= translate.bg.aboutus.about;
         langIcon.remove();
         langIcon.src = 
-        `icon/BG.png`;
+        `/static/icon/BG.png`;
         lngIcon.appendChild(langIcon)
 
     } 

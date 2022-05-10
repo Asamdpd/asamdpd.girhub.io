@@ -29,7 +29,7 @@ document.getElementById("bg").addEventListener("click", function(){
 
 document.getElementById("eng").addEventListener("click", function(){
 
-    element.src= `icon/ENG.png`
+    element.src= `/static/icon/ENG.png`
     
     document.cookie="language=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
     
@@ -53,7 +53,7 @@ document.getElementById("eng").addEventListener("click", function(){
 
 
 function bg(){
-    element.src= `icon/BG.png`
+    element.src= `/static/icon/BG.png`
 
     document.getElementById("navAbout").innerHTML = "За Нас";
     document.getElementById("navProducts").innerHTML = "Артикули";

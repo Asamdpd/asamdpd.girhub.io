@@ -5,6 +5,7 @@
 }
 
 
+
 body{
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -119,6 +120,11 @@ form{
     
 }
 
+.lastProd{
+    margin-bottom: 10%;
+}
+
+
 form h2{
     text-align: center;
     margin-bottom: 5%;
@@ -153,6 +159,24 @@ textarea:focus, input:focus{
 
 
 
+  @media screen and (max-width: 1410px) {
+    .firstProd{
+        margin-top: 10%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .firstProd{
+        margin-top: 15%;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .firstProd{
+        margin-top: 20%;
+    }
+  }
+
   @media screen and (max-width: 920px) {
     form{
         width: 70%;
@@ -164,7 +188,7 @@ textarea:focus, input:focus{
     }
 
     input[type=submit]{
-       font-size: 1.5vw !important;
+       font-size: 3rem !important;
         
       }
   }
@@ -213,6 +237,10 @@ input[type=submit]{
   font-size: 1.1vw;
   margin-bottom: 5%;
   
+}
+
+.jumbotron{
+    margin-top: 10%;
 }
 
 .dropdown-item {

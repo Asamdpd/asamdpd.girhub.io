@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 420px !important;
+    z-index: 2 !important;
+}
+
+
+
+
+.carousel-caption h5{
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    margin-top: 25px;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-caption a{
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgb(0, 119, 255) !important;
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.carousel-inner:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1 !important;
+}
+
+.fadeIn{
+    opacity: 0;
+    -webkit-animation: fading ease-in 1s;
+    animation: fading ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.animatedH{
+    -webkit-animation-delay: 1.1s;
+     animation-delay: 1.1s
+}
+
+.animatedp{
+    -webkit-animation-delay: 2.3s;
+    animation-delay: 2.3s
+}
+
+.animatedp1{
+    -webkit-animation-delay: 3.3s;
+    animation-delay: 3.3s
+}
+
+.w-100{
+    height: 100vh;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0.5; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0.5; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+         opacity: 1;   
+    }
+}
+@-moz-keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+         opacity: 1;   
+    }
+}
+
+@keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+         opacity: 1;   
+    }
+}
+
+.navbar-brand{
+    font-weight: bold;
+    color: rgb(0, 119, 255) !important;
+}
+
+#nav{
+    
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* background: #8f7eff !important; */
+    
+}
+
+nav{
+    font-family: 'Poppins', sans-serif;
+    z-index: 16 !important;
+}
+
+.underlineNavItem::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff5d51;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.underlineNavItem:hover::after{
+    width: 100%;
+}

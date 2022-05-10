@@ -9,9 +9,9 @@
 <script defer type="text/javascript" id="cookieinfo"
 	src="//cookieinfoscript.com/js/cookieinfo.min.js">
 </script>
-
+    <script defer src="/static/arti.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/static/index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,23 +30,26 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a id="navAbout" class="underlineNavItem nav-link" href="about.html">About Us</a>
+          <a id="navHome" class="underlineNavItem nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a id="navAbout" class="underlineNavItem nav-link" href="/about">About Us</a>
         </li>
         <li class="nav-item active">
           <a id="navProducts" class="underlineNavItem nav-link" href="#">Products <span class="sr-only">(current)</span></a>
         </li>
 
         <li class="nav-item">
-            <a id="navContact" class="underlineNavItem nav-link" href="contact.html">Contact Us</a>
+            <a id="navContact" class="underlineNavItem nav-link" href="/contact">Contact Us</a>
         </li>
 
         <li class="nav-item dropdown">
           <a class="lngIcon nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img id="langset" src="icon/ENG.png">
+            <img id="langset" src="/static/icon/ENG.png">
           </a>
           <div class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
-            <span id="eng" class="dropdown-item"> <img class="loption" src="icon/ENG.png"> English </span>
-            <span id="bg" class="dropdown-item"> <img class="loption" src="icon/BG.png"> Български </span>       
+            <span id="eng" class="dropdown-item"> <img class="loption" src="/static/icon/ENG.png"> English </span>
+            <span id="bg" class="dropdown-item"> <img class="loption" src="/static/icon/BG.png"> Български </span>       
           
         </li>
       </ul>         
@@ -55,10 +58,14 @@
     
     </div>
   </nav>
-
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
       <section id="hero">
           <div class="container">
-              <div class="row border mb">
+              <div class="firstProd row border mb">
                   <div class="col">
                     <h3 id="h1">Feeders for dogs and cats</h3>
                     <p id="p1" class="lead">Products can be in various colours</p>
@@ -76,22 +83,22 @@
                         </ol>
                         <div class="carousel-inner" >
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="./images/hranilka.jpg" alt="First slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/hranilka.jpg" alt="First slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/hran1.jpg" alt="Second slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/hran1.jpg" alt="Second slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/hran2.jpg" alt="Third slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/hran2.jpg" alt="Third slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/hran3.jpg" alt="Fourth slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/hran3.jpg" alt="Fourth slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/hran4.jpg" alt="Fifth slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/hran4.jpg" alt="Fifth slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/hran5.jpg" alt="Sixth slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/hran5.jpg" alt="Sixth slide" style="width:15vw;height:20rem;">
                           </div>
 
                         </div>
@@ -132,43 +139,43 @@
                         </ol>
                         <div class="carousel-inner" >
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="./images/1.jpg" alt="First slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/1.jpg" alt="First slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/2.jpg" alt="Second slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/2.jpg" alt="Second slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/3.jpg" alt="Third slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/3.jpg" alt="Third slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/4.jpg" alt="Fourth slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/4.jpg" alt="Fourth slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item ">
-                            <img class="d-block w-100" src="./images/5.jpg" alt="Fifth slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/5.jpg" alt="Fifth slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/6.jpg" alt="Sixth slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/6.jpg" alt="Sixth slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/7.jpg" alt="Seventh slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/7.jpg" alt="Seventh slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/8.jpg" alt="Eight slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/8.jpg" alt="Eight slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item ">
-                            <img class="d-block w-100" src="./images/9.jpg" alt="Ninth slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/9.jpg" alt="Ninth slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/10.jpg" alt="Tenth slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/10.jpg" alt="Tenth slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/11.jpg" alt="Eleventh slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/11.jpg" alt="Eleventh slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/12.jpg" alt="Twelvth slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/12.jpg" alt="Twelvth slide" style="width:15vw;height:20rem;">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="./images/13.jpg" alt="Thirteenth slide" style="width:15vw;height:35vh;">
+                            <img class="d-block w-100" src="/static/images/13.jpg" alt="Thirteenth slide" style="width:15vw;height:20rem;">
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
@@ -201,22 +208,22 @@
                           </ol>
                           <div class="carousel-inner" >
                             <div class="carousel-item active">
-                              <img class="d-block w-100" src="./images/leglo.jpg" alt="First slide" style="width:15vw;height:35vh;">
+                              <img class="d-block w-100" src="/static/images/leglo.jpg" alt="First slide" style="width:15vw;height:20rem;">
                             </div>
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="./images/l1.jpg" alt="Second slide" style="width:15vw;height:35vh;">
+                              <img class="d-block w-100" src="/static/images/l1.jpg" alt="Second slide" style="width:15vw;height:20rem;">
                             </div>
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="./images/l2.jpg" alt="Third slide" style="width:15vw;height:35vh;">
+                              <img class="d-block w-100" src="/static/images/l2.jpg" alt="Third slide" style="width:15vw;height:20rem;">
                             </div>
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="./images/l3.jpg" alt="Fourth slide" style="width:15vw;height:35vh;">
+                              <img class="d-block w-100" src="/static/images/l3.jpg" alt="Fourth slide" style="width:15vw;height:20rem;">
                             </div>
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="./images/l4.jpg" alt="Fifth slide" style="width:15vw;height:35vh;">
+                              <img class="d-block w-100" src="/static/images/l4.jpg" alt="Fifth slide" style="width:15vw;height:20rem;">
                             </div>
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="./images/l5.jpg" alt="Sixth slide" style="width:15vw;height:35vh;">
+                              <img class="d-block w-100" src="/static/images/l5.jpg" alt="Sixth slide" style="width:15vw;height:20rem;">
                             </div>
                           </div>
                           <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
@@ -251,28 +258,28 @@
                               </ol>
                               <div class="carousel-inner" >
                                 <div class="carousel-item active">
-                                  <img class="d-block w-100" src="./images/sl.jpg" alt="First slide" style="width:2vw;height:35vh;">
+                                  <img class="d-block w-100" src="/static/images/sl.jpg" alt="First slide" style="width:2vw;height:20rem;">
                                 </div>
                                 <div class="carousel-item">
-                                  <img class="d-block w-100" src="./images/sl1.jpg" alt="Second slide" style="width:15vw;height:35vh;">
+                                  <img class="d-block w-100" src="/static/images/sl1.jpg" alt="Second slide" style="width:15vw;height:20rem;">
                                 </div>
                                 <div class="carousel-item">
-                                  <img class="d-block w-100" src="./images/sl2.jpg" alt="Third slide" style="width:15vw;height:35vh;">
+                                  <img class="d-block w-100" src="/static/images/sl2.jpg" alt="Third slide" style="width:15vw;height:20rem;">
                                 </div>
                                 <div class="carousel-item">
-                                  <img class="d-block w-100" src="./images/sl3.jpg" alt="Fourth slide" style="width:15vw;height:35vh;">
+                                  <img class="d-block w-100" src="/static/images/sl3.jpg" alt="Fourth slide" style="width:15vw;height:20rem;">
                                 </div>
                                 <div class="carousel-item ">
-                                  <img class="d-block w-100" src="./images/sl4.jpg" alt="Fifth slide" style="width:15vw;height:35vh;">
+                                  <img class="d-block w-100" src="/static/images/sl4.jpg" alt="Fifth slide" style="width:15vw;height:20rem;">
                                 </div>
                                 <div class="carousel-item">
-                                  <img class="d-block w-100" src="./images/sl5.jpg" alt="Sixth slide" style="width:15vw;height:35vh;">
+                                  <img class="d-block w-100" src="/static/images/sl5.jpg" alt="Sixth slide" style="width:15vw;height:20rem;">
                                 </div>
                                 <div class="carousel-item">
-                                  <img class="d-block w-100" src="./images/sl6.jpg" alt="Seventh slide" style="width:15vw;height:35vh;">
+                                  <img class="d-block w-100" src="/static/images/sl6.jpg" alt="Seventh slide" style="width:15vw;height:20rem;">
                                 </div>
                                 <div class="carousel-item">
-                                  <img class="d-block w-100" src="./images/sl7.jpg" alt="Eight slide" style="width:15vw;height:35vh;">
+                                  <img class="d-block w-100" src="/static/images/sl7.jpg" alt="Eight slide" style="width:15vw;height:20rem;">
                                 </div>
                               </div>
                               <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
@@ -303,16 +310,16 @@
                                   </ol>
                                   <div class="carousel-inner" >
                                     <div class="carousel-item active">
-                                      <img class="d-block w-100" src="./images/b.jpg" alt="First slide" style="height:35vh;">
+                                      <img class="d-block w-100" src="/static/images/b.jpg" alt="First slide" style="height:20rem;">
                                     </div>
                                     <div class="carousel-item">
-                                      <img class="d-block w-100" src="./images/b1.jpg" alt="Second slide" style="height:35vh;">
+                                      <img class="d-block w-100" src="/static/images/b1.jpg" alt="Second slide" style="height:20rem;">
                                     </div>
                                     <div class="carousel-item">
-                                      <img class="d-block w-100" src="./images/b2.jpg" alt="Third slide" style="height:35vh;">
+                                      <img class="d-block w-100" src="/static/images/b2.jpg" alt="Third slide" style="height:20rem;">
                                     </div>
                                     <div class="carousel-item">
-                                      <img class="d-block w-100" src="./images/b3.jpg" alt="Fourth slide" style="height:35vh;">
+                                      <img class="d-block w-100" src="/static/images/b3.jpg" alt="Fourth slide" style="height:20rem;">
                                     </div>
                                     
                                   </div>
@@ -334,14 +341,14 @@
                                   <p id="u6">Price: €35</p>
                                 </div>
                                 <div class="col">                                  
-                                  <img class="d-block w-100" src="./images/zak.jpg" style="height:35vh;">     
+                                  <img class="d-block w-100" src="/static/images/zak.jpg" style="height:20rem;">     
                                 </div>
                              </div>
 
 
 
                             
-                             <div class="row border mb">
+                             <div class="lastProd row border mb">
                               <div class="col">
                                 <h3 id="h7">Feeder and bed set</h3>
                                 <p id="p7" class="lead">Bed size 40x40 cm</p>
@@ -359,19 +366,19 @@
                                     </ol>
                                     <div class="carousel-inner" >
                                       <div class="carousel-item active">
-                                        <img class="d-block w-100" src="./images/lih.jpg" alt="First slide" style="height:35vh;">
+                                        <img class="d-block w-100" src="/static/images/lih.jpg" alt="First slide" style="height:20rem;">
                                       </div>
                                       <div class="carousel-item">
-                                        <img class="d-block w-100" src="./images/lih1.jpg" alt="Second slide" style="height:35vh;">
+                                        <img class="d-block w-100" src="/static/images/lih1.jpg" alt="Second slide" style="height:20rem;">
                                       </div>
                                       <div class="carousel-item">
-                                        <img class="d-block w-100" src="./images/lih2.jpg" alt="Third slide" style="height:35vh;">
+                                        <img class="d-block w-100" src="/static/images/lih2.jpg" alt="Third slide" style="height:20rem;">
                                       </div>
                                       <div class="carousel-item">
-                                        <img class="d-block w-100" src="./images/lih3.jpg" alt="Fourth slide" style="height:35vh;">
+                                        <img class="d-block w-100" src="/static/images/lih3.jpg" alt="Fourth slide" style="height:20rem;">
                                       </div>
                                       <div class="carousel-item">
-                                        <img class="d-block w-100" src="./images/lih4.jpg" alt="Fifth slide" style="height:35vh;">
+                                        <img class="d-block w-100" src="/static/images/lih4.jpg" alt="Fifth slide" style="height:20rem;">
                                       </div>
                                       
                                     </div>
@@ -397,5 +404,5 @@
             
       </footer>
 </body>
-<script  src="./arti.js"></script>
+
 </html>

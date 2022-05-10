@@ -1,6 +1,6 @@
-from flask import Flask, render_template, send_from_directory, request, redirect, json
+from flask import Flask, render_template, request, redirect
 from flask_compress import Compress
-from flask_mail import Mail, Message
+
 
 app = Flask(__name__, static_folder='static')
 Compress(app)
@@ -29,9 +29,10 @@ def contact():
     return render_template("contact.html")
 
 
-@app.products("/products", methods=["GET"])
-def index():
+@app.route("/products", methods=["GET"])
+def products():
     return render_template("products.html")
+
 
 
 # technical pages
